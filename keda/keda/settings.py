@@ -29,12 +29,12 @@ ALLOWED_HOSTS = [
 
     # '127.0.0.1',
     # 'localhost',
-    'https://www.keda.senja.co.uk/',
+    'keda.senja.co.uk',
 ]
 
 INTERNAL_IPS = [
     # "127.0.0.1",
-    "https://www.keda.senja.co.uk/",
+    "keda.senja.co.uk",
 ]
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
