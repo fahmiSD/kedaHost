@@ -27,15 +27,15 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
 
-    # '127.0.0.1',
-    # 'localhost',
-    '18.141.230.246',
-    'keda.senja.co.uk',
+    '127.0.0.1',
+    'localhost',
+    # '18.141.230.246',
+    # 'keda.senja.co.uk',
 ]
 
 INTERNAL_IPS = [
-    # "127.0.0.1",
-    "keda.senja.co.uk",
+    "127.0.0.1",
+    # "keda.senja.co.uk",
 ]
 
 X_FRAME_OPTIONS = 'SAMEORIGIN'
