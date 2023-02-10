@@ -184,7 +184,7 @@
                     <div id="dropdownCareer-{{ forloop.counter }}" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-30">
                         <ul class="py-2 text-sm text-center text-black" aria-labelledby="dropdownDefaultButton-{{ forloop.counter }}">
                           <li>
-                            <button value="{% url "detailCareer" career.slug_career %}" id="job{{ forloop.counter }}" onclick="copyClipboard(this.value)" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Share</button>
+                            <button value="{% url "detail-career" career.slug_career %}" id="job{{ forloop.counter }}" onclick="copyClipboard(this.value)" class="block px-4 py-2 hover:bg-gray-100 cursor-pointer">Share</button>
                           </li>
                     </div>
                   </div>
@@ -192,7 +192,7 @@
                     <p style="background-color: {{ career.career_tag_id.color_id.hex_code }};" class="career-tag w-[132px] py-1 text-center rounded-full text-white mb-3">{{ career.career_tag_id.career_tag_name }}</p>
                     <p class="text-lg">{{ career.description|safe|truncatechars:140 }}</p>
                     <p class="text-lg font-semibold">Apply before: {{career.deadline}}</p>
-                    <Button onclick="window.location.href = '{% url "detailCareer" career.slug_career %}';" href="" class="mt-5 py-2 w-full border bg-[#d20008] text-white rounded-md hover:bg-[#b3020f] font-medium transition duration-300">Apply Now </Button>
+                    <Button onclick="window.location.href = '{% url "detail-career" career.slug_career %}';" href="" class="mt-5 py-2 w-full border bg-[#d20008] text-white rounded-md hover:bg-[#b3020f] font-medium transition duration-300">Apply Now </Button>
                
                 </Card>
               </div>
@@ -247,7 +247,7 @@
               <a href="/">
                     <p class="text-white mb-3">Home</p>
                   </a>
-                  <a href="/aboutStory">
+                  <a href="/about-story">
                     <p class="text-white mb-3">About</p>
                   </a>
                   <a href="/solution">
