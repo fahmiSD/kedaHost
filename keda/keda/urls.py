@@ -37,7 +37,7 @@ urlpatterns = [
     path('process-development/', processDevelopment, name='process-development'),
     path('process-support/', processSupport, name='process-support'),
     path('process-next-steps/', processNextSteps, name='process-next-steps'),
-    path('aboutCareer/', aboutCareer, name='aboutCareer'),
+    path('about-career/', aboutCareer, name='about-career'),
 
     # path('fourzerofour/', fourzerofour, name='fourzerofour'),
     path('about-technologies/', aboutTechnologies, name='about-technologies'),
@@ -51,7 +51,7 @@ urlpatterns = [
     path('about-story/', aboutStory, name='about-story'),
     path('about-team/', aboutTeam, name='about-team'),
     path('detail-career/<slug:slug_career>', detailCareer, name='detail-career'),
-    path('processOverview/', process, name='processOverview'),
+    path('process-overview/', process, name='process-overview'),
 
     path('blog/', blog, name="blog"),
     re_path(r'^ckeditor/', include('ckeditor_uploader.urls')),
