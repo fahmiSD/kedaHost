@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
 
     # '127.0.0.1',
     # 'localhost',
+    '18.141.230.246',
     'keda.senja.co.uk',
 ]
 
