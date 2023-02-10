@@ -438,7 +438,7 @@ def team(request):
 
 
 def process(request):
-    return render(request, 'processOverview.html')
+    return render(request, 'process-overview.html')
 
 
 def consultation(request):
@@ -498,31 +498,31 @@ def consultation(request):
 
 
 def processOverview(request):
-    return render(request, 'processOverview.html')
+    return render(request, 'process-overview.html')
 
 
 def processBrief(request):
-    return render(request, 'processBrief.html')
+    return render(request, 'process-brief.html')
 
 
 def processScope(request):
-    return render(request, 'processScope.html')
+    return render(request, 'process-scope.html')
 
 
 def processEstimation(request):
-    return render(request, 'processEstimation.html')
+    return render(request, 'process-estimation.html')
 
 
 def processDevelopment(request):
-    return render(request, 'processDevelopment.html')
+    return render(request, 'process-development.html')
 
 
 def processSupport(request):
-    return render(request, 'processSupport.html')
+    return render(request, 'process-support.html')
 
 
 def processNextSteps(request):
-    return render(request, 'processNextSteps.html')
+    return render(request, 'process-next-steps.html')
 
 
 def detailProject(request):
