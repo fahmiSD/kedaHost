@@ -12,9 +12,9 @@
             <div class="flex justify-center col-span-2">
               <img src="{% static "image/public/mysql.svg" %}" alt="" class="md:w-[409px] w-[274px]" />
             </div>
-            <div class="col-span-3 mt-12">
-              <h1 class="md:text-5xl text-4xl font-bold mb-5">My SQL</h1>
-              <p class="mb-5">
+            <div class="col-span-3 mt-12 md:pl-20">
+              <h1 class="md:text-5xl text-4xl font-bold mb-5 text-[#333333]">My SQL</h1>
+              <p class="mb-5 text-[#333333] md:leading-relaxed leading-relaxed max-w-[555px]">
                 Awalnya, MySQL adalah pengembangan lanjutan dari proyek UNIREG
                 yang belum terlalu kompatibel dengan database dinamis yang
                 dipakai dalam website.
@@ -22,7 +22,7 @@
                 <br />
                 Seiring perkembangannya, MySQL menjadi sebuah database
                 management system yang menggunakan perintah dasar SQL atau
-                Structured Query Language yang cukup terkenal.{" "}
+                Structured Query Language yang cukup terkenal.
               </p>
             </div>
           </div>
@@ -34,11 +34,11 @@
             alt=""
             class="w-[492px] rounded"
           />
-          <div class="md:py-16 py-5">
-            <h1 class="md:text-5xl text-3xl font-bold mb-5">
+          <div class="md:py-10 py-5">
+            <h1 class="md:text-5xl text-3xl font-bold mb-5 text-[#333333] md:leading-relaxed">
               Bagaimana penerapan teknologi ini
             </h1>
-            <p class="mb-5">
+            <p class="mb-5 text-[#333333] leading-relaxed max-w-[555px]">
               MySQL masuk ke dalam jenis Relational Database Management System,
               sehingga istilah seperti baris, kolom, tabel, dipakai pada
               aplikasi database ini.
@@ -49,18 +49,18 @@
         <div class="bg-white md:grid grid-cols-2 md:px-20 md:py-14 pb-8 px-7">
           <img src="{% static "image/public/whatAdvantage2.svg" %}" alt="" class="w-[492px]" />
           <div class="md:py-20 py-5">
-            <h1 class="md:text-5xl text-3xl font-bold mb-5">Apa keuntungannya</h1>
-            <p class="md:pr-3">
+            <h1 class="md:text-5xl text-3xl font-bold mb-5 text-[#333333] leading-relaxed">Apa keuntungannya</h1>
+            <p class="md:pr-3 text-[#333333] leading-relaxed max-w-[555px]">
               Dengan menerapkan MySQL, Anda tidak membutuhkan RAM yang besar.
               Selain itu MySQL juga mendukung integrasi dengan bahasa pemrograma
-              lain.{" "}
+              lain.
             </p>
           </div>
         </div>
         {% comment %} Our Project {% endcomment %}
         <div class="bg-white hidden md:block">
           <div class="px-20 py-14 m-0">
-            <h1 class="text-center text-3xl md:text-6xl font-bold mb-14">Proyek Kami Yang Menggunakan Mysql</h1>
+            <h1 class="text-left text-5xl font-bold mb-14 text-[#333333]">Proyek Kami Yang Menggunakan Mysql</h1>
             <div class="md:grid md:grid-cols-3 place-content-center place-items-center hidden">
               <div class="block w-[326px] h-[587px] py-5 bg-white shadow-gray-500/50 shadow-md hover:shadow-xl hover:shadow-black/30 transition duration-300 cursor-pointer">
                 <div>
@@ -207,15 +207,14 @@
         {% comment %} after footer {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterPurple.svg" %}')" class="h-[720px] shadow-black hidden md:flex justify-center items-center bg-no-repeat bg-center bg-cover">
           <div class="">
-            <h1 class="text-5xl font-bold mb-4">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-2xl pr-20 mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-5xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl w-[559px] mb-4 text-[#333333]">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
               <form action="" method="POST">
                 {% csrf_token %}
                 {{form}}
                 <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md ml-3 font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
               </form> 
-
               {% if message == 'berhasil' %}
                 <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
               {% elif message == 'error' %}
@@ -224,11 +223,11 @@
             </div>
           </div>
         </div>
-        {% comment %} after footer mobile{% endcomment %}
+    {% comment %} after footer mobile {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterPurpleSmall.svg" %}')" class="h-[720px] bg-center bg-cover bg-no-repeat md:hidden">
           <div class="py-52 px-10">
-            <h1 class="text-4xl font-bold mb-4 text">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-xl  mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-4xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl text-[#333333] mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
               <form action="" method="POST">
                 {% csrf_token %}
@@ -237,7 +236,6 @@
                   <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
                 </div>
               </form> 
-
               {% if message == 'berhasil' %}
                 <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
               {% elif message == 'error' %}

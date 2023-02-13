@@ -4,12 +4,12 @@
 <div>
    {% comment %} banner  {% endcomment %}
         <div style="background-image: url('{% static "image/public/BackgroundHomeDark.svg" %}')" class="h-[646px] hidden md:flex justify-center bg-no-repeat bg-center bg-cover">
-          <div class="col-span-3 container md:px-20 px-10 pt-32">
+          <div class="col-span-3 container px-10 pt-32">
             <div class="">
-              <img src="{% static "image/public/logoHomePage.svg" %}" alt="logo" class="mb-6" width={448} height={254}/>
+              <img src="{% static "image/public/logoHomePage.svg" %}" alt="logo" class="mb-8" width={448} height={254}/>
             </div>
-              <p class="text-white md:text-3xl text-xl font-semibold md:mb-14 mb-5">Your Digital Transformation Partner {% url home as home_url %} </p>
-              <button onclick="window.location.href = '{% url "consultation" %}';" class="md:px-12 md:py-4 py-2 px-5 border text-2xl font-bold bg-[#d20008] border-[#d20008] text-white rounded  hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Book a chat</button>
+              <p class="text-white text-4xl md:mb-14 mb-5">Your Digital Transformation Partner {% url home as home_url %} </p>
+              <button onclick="window.location.href = '{% url "consultation" %}';" class="md:px-12 md:py-4 py-2 px-5 border text-2xl font-bold bg-[#d20008] border-[#d20008] text-white rounded  hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300"><h2>Book a chat</h2></button>
             </div>
         </div>
         <div style="background-image: url('{% static "image/public/bgIndexSmall.svg" %}')" class="h-[646px] md:hidden bg-center bg-cover bg-no-repeat">
@@ -17,31 +17,31 @@
             <div class="pr-5">
               <img src="{% static "image/public/logoHomePage.svg" %}" alt="logo" class="mb-6" width={448} height={254}/>
             </div>
-              <p class="text-white text-lg font-semibold mb-5">Your Digital Transformation Partner</p>
-              <button onclick="window.location.href = '{% url "consultation" %}';" class="md:px-12 md:py-4 py-2 px-5 border text-2xl font-bold bg-[#d20008] border-[#d20008] text-white rounded  hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Book a chat</button>
+              <p class="text-white text-lg mb-5">Your Digital Transformation Partner</p>
+              <button onclick="window.location.href = '{% url "consultation" %}';" class="md:px-12 md:py-4 py-2 px-5 border text-2xl font-bold bg-[#d20008] border-[#d20008] text-white rounded  hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300"><h2>Book a chat</h2></button>
             </div>
         </div>
     {% comment %} quote {% endcomment %}
         <div class="bg-[#fbfbfb] drop-shadow-lg">
-          <div style="" class="h-[763px] shadow-black test bg-no-repeat bg-center bg-cover drop-shadow-lg flex justify-center items-center" id="Test">
+          <div style="" class="bg-white h-[666px] md:h-[763px] shadow-black test bg-no-repeat bg-center bg-cover flex justify-center items-center drop-shadow-lg" id="Test">
             <div class="md:px-28 px-5 flex justify-center items-center">
-              <h1 class="md:text-4xl text-3xl font-bold leading-normal italic">"Diawali dengan perkumpulan programmer yang ahli dari Amerika, <span class="text-[#d20008]">KeDA Tech</span> berkomitmen untuk membantu revolusi bisnis Anda dan mempersiapkan teknologi yang pas untuk Anda menghadapi tantangan bisnis di era digital"</h1>
+              <h1 class="md:text-4xl w-[282px] text-2xl font-bold md:leading-relaxed leading-relaxed text-[#333333] md:w-[1038px] italic ">"Diawali dengan perkumpulan programmer yang ahli dari Amerika, <span class="text-[#d20008]">KeDA Tech</span> berkomitmen untuk membantu revolusi bisnis Anda dan mempersiapkan teknologi yang pas untuk Anda menghadapi tantangan bisnis di era digital"</h1>
             </div>
           </div>
     {% comment %} prosess  {% endcomment %}
-          <div class=" md:px-10 px-5 py-14">
-            <div class="md:grid md:grid-cols-2 place-content-center place-items-center md:gap-14">
+          <div class=" md:px-10 px-5 py-14 h-[637px] md:h-[720px]">
+            <div class="md:grid md:grid-cols-2 place-content-center place-items-center">
               <p class="md:text-3xl md:hidden text-xl font-semibold mb-7">Proses yang Kami Lakukan</p>
               <div class="md:col-span-1 hidden md:block">
                 <img src="{% static "image/public/homeProcess1.svg" %}" alt="" className=" object-cover"/>
               </div>
-              <div class="md:hidden">
-                <img src="{% static "image/public/homeProcess.svg" %}" alt="" className=" object-cover"/>
+              <div class="md:hidden mr-0">
+                <img src="{% static "image/public/homeProcess.svg" %}" alt="" className=" object-cover "/>
               </div>
               <div class="md:pl-5 col-span-1 mt-5">
-                <h2 class="md:text-3xl hidden md:block text-xl font-semibold mb-7">Proses yang Kami Lakukan</h2>
-                <h1 class="md:text-4xl text-2xl font-bold mb-5">Kami mandengar dan paham kebutuhan bisnis Anda</h1>
-                <button onclick="window.location.href = '{% url "process-overview" %}';" class="md:px-24 px-10 py-2 border text-lg font-bold bg-[#d20008] border-[#d20008] text-white rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Detail</button>
+                <h2 class="md:text-3xl hidden md:block text-xl mb-7">Proses yang Kami Lakukan</h2>
+                <h1 class="md:text-4xl text-2xl font-bold md:leading-normal mb-5">Kami mandengar dan <br/> paham kebutuhan bisnis Anda</h1>
+                <button onclick="window.location.href = '{% url "process-overview" %}';" class="md:px-28 px-10 py-1 md:py-4 border text-lg md:text-2xl font-bold bg-[#d20008] border-[#d20008] text-white rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300"><h2>Detail</h2></button>
               </div>
             </div>
           </div>
@@ -50,40 +50,40 @@
         <div class="bg-white">
           <div class="bg-[#fbfbfb] shadow-md h-[1px]"></div>
           <div class="py-14 bg-white">
-            <h1 class="text-center text-3xl md:text-6xl font-bold mb-14">Solusi yang Kami Berikan</h1>
+            <h1 class="text-center text-3xl md:text-7xl font-bold mb-14">Solusi yang Kami Berikan</h1>
             <a href="/solution/#web-development">
-            <div class="flex items-center md:px-28 px-16 py-8 hover:bg-[#f3f3f3] active:bg-[#d20008] transition duration-300 cursor-pointer">
-              <img src="{% static "image/public/solusi.svg" %}" alt="" class="md:w-[173px] md:h-[173px] w-[80px] h-[80px]"/>
-              <div class="ml-6">
-                <h2 class="font-bold text-2xl mb-4">Pengembangan Website</h2>
-                <p class="hidden md:block">User Interface yang baik dan tepat bisa meningkatkan conversion rates website sampai 200%. Jadi sudah seharusnya website bisnis Anda menjadi efektif dengan desain yang menarik, fitur yang lengkap dan mudah diatur.</p>
+            <div class="flex items-center md:px-40 px-16 py-8 hover:bg-[#f3f3f3] active:bg-[#d20008] transition duration-300 cursor-pointer">
+              <img src="{% static "image/public/solusi.svg" %}" alt="" class="md:w-[173px] md:h-[173px] w-[80px] h-[80px] rounded md:rounded-none"/>
+              <div class="md:ml-12 ml-6">
+                <h2 class="md:font-bold md:text-2xl text-xl font-semibold md:mb-4">Pengembangan Website</h2>
+                <p class="hidden md:block w-[627px] text-gray-500 font-light">User Interface yang baik dan tepat bisa meningkatkan conversion rates website sampai 200%. Jadi sudah seharusnya website bisnis Anda menjadi efektif dengan desain yang menarik, fitur yang lengkap dan mudah diatur.</p>
               </div>
             </div>
             </a>
             <a href="/solution/#mobile-apps">
-            <div class="flex items-center md:px-28 px-16 py-8 hover:bg-[#f3f3f3] active:bg-[#d20008] transition duration-300 cursor-pointer">
-              <img src="{% static "image/public/mobileApps.svg" %}" alt="" class="md:w-[173px] md:h-[173px] w-[80px] h-[80px]"/>
-              <div class="ml-6">
-                <h2 class="font-bold text-2xl mb-4">Aplikasi Mobile</h2>
-                <p class="hidden md:block">70% pelaku belanja online yang meninggalkan keranjangnya akibat pengalaman pengguna yang buruk dalam mengakses aplikasi. Jangan sampai hal ini terjadi pada bisnis digital Anda.</p>
+            <div class="flex items-center md:px-40 px-16 py-8 hover:bg-[#f3f3f3] active:bg-[#d20008] transition duration-300 cursor-pointer">
+              <img src="{% static "image/public/mobileApps.svg" %}" alt="" class="md:w-[173px] md:h-[173px] w-[80px] h-[80px] rounded md:rounded-none"/>
+              <div class="md:ml-12 ml-6">
+                <h2 class="md:font-bold md:text-2xl text-xl font-semibold md:mb-4">Aplikasi Mobile</h2>
+                <p class="hidden md:block w-[627px] text-gray-500 font-light">70% pelaku belanja online yang meninggalkan keranjangnya akibat pengalaman pengguna yang buruk dalam mengakses aplikasi. Jangan sampai hal ini terjadi pada bisnis digital Anda.</p>
               </div>
             </div>
             </a>
             <a href="/solution/#game-development">
-            <div class="flex items-center md:px-28 px-16 py-8 hover:bg-[#f3f3f3] active:bg-[#d20008] transition duration-300 cursor-pointer">
+            <div class="flex items-center md:px-40 px-16 py-8 hover:bg-[#f3f3f3] active:bg-[#d20008] transition duration-300 cursor-pointer">
               <img src="{% static "image/public/gameDeveloping.svg" %}" alt="" class="md:w-[173px] md:h-[173px] w-[80px] h-[80px]"/>
-              <div class="ml-6">
-                <h2 class="font-bold text-2xl mb-4">Pengembangan Game</h2>
-                <p class="hidden md:block">Suatu game ternyata bisa menjadi media iklan yang menarik juga berbeda untuk bisnis Anda. Jangan khawatir tentang bagaimana kami akan membuatnya tampak menarik. Karena kami akan mendiskusikannya dahulu idenya dengan Anda.</p>
+              <div class="md:ml-12 ml-6">
+                <h2 class="md:font-bold md:text-2xl text-xl font-semibold md:mb-4">Pengembangan Game</h2>
+                <p class="hidden md:block w-[627px] text-gray-500 font-light">Suatu game ternyata bisa menjadi media iklan yang menarik juga berbeda untuk bisnis Anda. Jangan khawatir tentang bagaimana kami akan membuatnya tampak menarik. Karena kami akan mendiskusikannya dahulu idenya dengan Anda.</p>
               </div>
             </div>
             </a>
             <a href="/solution/#sistem-erp">
-            <div class="flex items-center md:px-28 px-16 py-8 hover:bg-[#f3f3f3] active:bg-[#d20008] transition duration-300 cursor-pointer">
-              <img src="{% static "image/public/enterpriseResourcePlanning.svg" %}" alt="" class="md:w-[173px] md:h-[173px] w-[80px] h-[80px] object-cover"/>
-              <div class="ml-6">
-                <h2 class="font-bold text-2xl mb-4">Sistem ERP</h2>
-                <p class="hidden md:block">Data mengenai Enterprise Resource Planning atau ERP yang tepat bisa menghemat pengeluaran bisnis Anda sebesar 46% dan meningkatkan proses bisnis sampai 90%.</p>
+            <div class="flex items-center md:px-40 px-16 py-8 hover:bg-[#f3f3f3] active:bg-[#d20008] transition duration-300 cursor-pointer">
+              <img src="{% static "image/public/enterpriseResourcePlanning.svg" %}" alt="" class="md:w-[173px] md:h-[173px] w-[80px] h-[80px] object-cover rounded md:rounded-none"/>
+              <div class="md:ml-12 ml-6">
+                <h2 class="md:font-bold md:text-2xl text-xl font-semibold md:mb-4">Sistem ERP</h2>
+                <p class="hidden md:block w-[627px] text-gray-500 font-light">Data mengenai Enterprise Resource Planning atau ERP yang tepat bisa menghemat pengeluaran bisnis Anda sebesar 46% dan meningkatkan proses bisnis sampai 90%.</p>
               </div>
             </div>
             </a>
@@ -103,7 +103,7 @@
                 </div>
                 <div class="px-7">
                   <h3 class="text-3xl font-bold mb-3">WayFinder</h3>
-                  <p>Navigasi dalam ruangan yang terintegrasi dengan sistem manajemen gudang. Sehingga meningkatkan efisiensi para pekerjanya.</p>
+                  <p class="text-gray-700 font-light">Navigasi dalam ruangan yang terintegrasi dengan sistem manajemen gudang. Sehingga meningkatkan efisiensi para pekerjanya.</p>
                 </div>
               </div>
               <div class="block w-[326px] h-[587px] py-5 bg-white shadow-gray-500/50 shadow-md hover:shadow-xl hover:shadow-black/30 transition duration-300 cursor-pointer">
@@ -115,7 +115,7 @@
                 </div>
                 <div class="px-7">
                   <h3 class="text-3xl font-bold mb-3">AXA</h3>
-                  <p>Sebuah VR interaktif yang memberikan pengalaman mengemudi di kota Anfield.</p>
+                  <p class="text-gray-700 font-light">Sebuah VR interaktif yang memberikan pengalaman mengemudi di kota Anfield.</p>
                 </div>
               </div>
               <div class="block w-[326px] h-[587px] py-5 bg-white shadow-gray-500/50 shadow-md hover:shadow-xl hover:shadow-black/30 transition duration-300 cursor-pointer">
@@ -127,7 +127,7 @@
                 </div>
                 <div class="px-7">
                   <h3 class="text-3xl font-bold mb-3">Container Loader</h3>
-                  <p>Sebuah software simulasi yang mampu menghitung secara optimal tentang konfigurasi barang yang masuk dalam kargo atau kontainer.</p>
+                  <p class="text-gray-700 font-light">Sebuah software simulasi yang mampu menghitung secara optimal tentang konfigurasi barang yang masuk dalam kargo atau kontainer.</p>
                 </div>
               </div>
             </div>
@@ -247,8 +247,8 @@
    {% comment %} after footer {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterGreen.svg" %}')" class="h-[720px] shadow-black hidden md:flex justify-center items-center bg-no-repeat bg-center bg-cover">
           <div class="">
-            <h1 class="text-5xl font-bold mb-4">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-2xl pr-20 mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-5xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl w-[559px] mb-4 text-[#333333]">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
               <form action="" method="POST">
                 {% csrf_token %}
@@ -266,8 +266,8 @@
     {% comment %} after footer mobile {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterGreenSmall.svg" %}')" class="h-[720px] bg-center bg-cover bg-no-repeat md:hidden">
           <div class="py-52 px-10">
-            <h1 class="text-4xl font-bold mb-4 text">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-xl  mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-4xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl text-[#333333] mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
               <form action="" method="POST">
                 {% csrf_token %}

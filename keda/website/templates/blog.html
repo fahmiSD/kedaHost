@@ -59,7 +59,7 @@
                         <div class="grid gap-2 mb-4 cursor-pointer">
                             <img src="{{ trending.image_blog.url }}" alt="" class="w-[246px] h[177px] object-center object-cover"/>
                             <p style="background-color : {{ trending.blog_tag.color_id.hex_code }}" class="text-white rounded-full py-1 px-4 w-fit ">{{ trending.blog_tag}}</p>
-                            <h3 class="text-xl font-bold">{{ trending.blog_header}}</h3>
+                            <p class="text-xl font-bold">{{ trending.blog_header}}</p>
                             <p>{{ trending.description|safe|truncatechars:110 }}</p>
                         </div>
                       </a>
@@ -121,18 +121,17 @@
           <p class="text-white mt-7 flex justify-center">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> KeDA Tech<span class="md:block hidden">. All Rights Reserved.</span></p>
       </div>
     </div>
-    {% comment %} After Footer {% endcomment %}
+    {% comment %} after footer {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterGreen.svg" %}')" class="h-[720px] shadow-black hidden md:flex justify-center items-center bg-no-repeat bg-center bg-cover">
           <div class="">
-            <h1 class="text-5xl font-bold mb-4">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-2xl pr-20 mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-5xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl w-[559px] mb-4 text-[#333333]">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
               <form action="" method="POST">
                 {% csrf_token %}
                 {{form}}
                 <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md ml-3 font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
               </form> 
-
               {% if message == 'berhasil' %}
                 <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
               {% elif message == 'error' %}
@@ -141,29 +140,27 @@
             </div>
           </div>
         </div>
-      {% comment %} after footer mobile {% endcomment %}
-      <div style="background-image: url('{% static "image/public/bgAfterFooterGreenSmall.svg" %}')" class="h-[720px] bg-center bg-cover bg-no-repeat md:hidden">
-        <div class="py-52 px-10">
-          <h1 class="text-4xl font-bold mb-4 text">Tetap Terhubung Bersama Kami</h1>
-          <p class="text-xl  mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
-          <div>
-            <form action="" method="POST">
-              {% csrf_token %}
-              {{form}}
-              <div class="mt-5">
-                <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
-              </div>
-            </form> 
-
-            {% if message == 'berhasil' %}
-              <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
-            {% elif message == 'error' %}
-              <p style="color: rgb(220 38 38);" class="text-xs italic">Format Email yang Anda masukkan salah!</p>
-            {% endif %}
-
+    {% comment %} after footer mobile {% endcomment %}
+        <div style="background-image: url('{% static "image/public/bgAfterFooterGreenSmall.svg" %}')" class="h-[720px] bg-center bg-cover bg-no-repeat md:hidden">
+          <div class="py-52 px-10">
+            <h1 class="text-4xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl text-[#333333] mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <div>
+              <form action="" method="POST">
+                {% csrf_token %}
+                {{form}}
+                <div class="mt-5">
+                  <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
+                </div>
+              </form> 
+              {% if message == 'berhasil' %}
+                <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
+              {% elif message == 'error' %}
+                <p style="color: rgb(220 38 38);" class="text-xs italic">Format Email yang Anda masukkan salah!</p>
+              {% endif %}
+            </div>
           </div>
         </div>
-      </div>
     </div>
     <script src ="{% static 'js/blog.js' %}"></script>
 {% endblock content %}

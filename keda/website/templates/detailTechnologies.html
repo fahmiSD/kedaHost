@@ -13,8 +13,8 @@
               <img src="{% static "image/public/unreal.svg" %}" alt="" class="md:w-[360px] w-[230px]" />
             </div>
             <div class="py-7 md:py-0 px-7 md:px-0">
-              <h1 class="md:text-5xl text-4xl font-bold mb-5">UNREAL ENGINE</h1>
-              <p class="mb-5">
+              <h1 class="md:text-5xl text-4xl font-bold mb-5 text-[#333333]">UNREAL ENGINE</h1>
+              <p class="mb-5 text-[#333333] leading-relaxed">
                 Aplikasi game engine ini dibuat oleh Epic Games dan memulai
                 debutnya di
                 <br class="hidden md:block"/> tahun 1998. Diawali dengan game tembak-menembak, sekarang
@@ -26,7 +26,7 @@
                 <br />
                 Peningkatan yang terus terasa dari Unreal Engine adalah membuat
                 bentuk
-                <br class="hidden md:block"/> 3D semakin nyata seperti aslinya.{" "}
+                <br class="hidden md:block"/> 3D semakin nyata seperti aslinya.
               </p>
             </div>
           </div>
@@ -38,11 +38,11 @@
             alt=""
             class="w-[492px] rounded"
           />
-          <div class="md:py-14 py-8">
-            <h1 class="md:text-5xl text-3xl font-bold mb-5">
+          <div class="md:py-10 py-8">
+            <h1 class="md:text-5xl text-3xl font-bold mb-5 md:leading-relaxed leading-relaxed text-[#333333]">
               Bagaimana penerapan teknologi ini
             </h1>
-            <p class="mb-5">
+            <p class="mb-5 text-[#333333] leading-relaxed">
               Unreal Engine mengijinkan Anda membuat proyek tanpa batas. Karena
               tidak hanya untuk games, Unreal Engine bisa Anda terapkan untuk
               film, arsitektur, otomotif dan transportasi, broadcast events,
@@ -54,8 +54,8 @@
         <div class="bg-white md:grid md:grid-cols-2 md:px-20 md:py-14 px-7">
           <img src="{% static "image/public/whatAdvantage.svg" %}" alt="" class="w-[492px] rounded" />
           <div class="md:py-20 py-8">
-            <h1 class="md:text-5xl text-3xl font-bold mb-5">Apa keuntungannya</h1>
-            <p class="mb-5">
+            <h1 class="md:text-5xl text-3xl font-bold mb-5 text-[#333333]">Apa keuntungannya</h1>
+            <p class="mb-5 text-[#333333] leading-relaxed">
               Dengan menerapkan Unreal Engine Anda bisa mendapatkan gambaran
               yang sempurna sesuai dengan aslinya. Anda bisa memperkirakan
               simulasi secara maksimal dengan Unreal Engine ini.
@@ -65,7 +65,7 @@
         {% comment %} Our Project {% endcomment %}
         <div class="bg-white hidden md:block">
           <div class="px-20 py-14 m-0">
-            <h1 class="text-center text-3xl md:text-6xl font-bold mb-14">Proyek Kami yang menggunakan UNREAL Engine</h1>
+            <h1 class="text-left text-5xl text-[#333333] font-bold mb-14">Proyek Kami yang menggunakan UNREAL Engine</h1>
             <div class="md:grid md:grid-cols-3 place-content-center place-items-center hidden">
               <div class="block w-[326px] h-[587px] py-5 bg-white shadow-gray-500/50 shadow-md hover:shadow-xl hover:shadow-black/30 transition duration-300 cursor-pointer">
                 <div>
@@ -108,7 +108,7 @@
         </div>
         {% comment %} Our Project Mobile{% endcomment %}
         <div id="carouselExampleCaptions" class="carousel slide relative md:hidden" data-bs-ride="carousel">
-          <h1 class="text-center text-3xl md:text-6xl font-bold">Proyek Kami yang memakai UNREAL Engine</h1>
+          <h1 class="text-center text-3xl font-bold">Proyek Kami yang memakai UNREAL Engine</h1>
           <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
             <button
               type="button"
@@ -212,15 +212,14 @@
         {% comment %} after footer {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterPurple.svg" %}')" class="h-[720px] shadow-black hidden md:flex justify-center items-center bg-no-repeat bg-center bg-cover">
           <div class="">
-            <h1 class="text-5xl font-bold mb-4">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-2xl pr-20 mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-5xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl w-[559px] mb-4 text-[#333333]">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
               <form action="" method="POST">
                 {% csrf_token %}
                 {{form}}
                 <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md ml-3 font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
               </form> 
-
               {% if message == 'berhasil' %}
                 <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
               {% elif message == 'error' %}
@@ -229,11 +228,11 @@
             </div>
           </div>
         </div>
-        {% comment %} after footer mobile{% endcomment %}
+    {% comment %} after footer mobile {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterPurpleSmall.svg" %}')" class="h-[720px] bg-center bg-cover bg-no-repeat md:hidden">
           <div class="py-52 px-10">
-            <h1 class="text-4xl font-bold mb-4 text">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-xl  mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-4xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl text-[#333333] mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
               <form action="" method="POST">
                 {% csrf_token %}
@@ -242,7 +241,6 @@
                   <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
                 </div>
               </form> 
-
               {% if message == 'berhasil' %}
                 <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
               {% elif message == 'error' %}

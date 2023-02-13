@@ -4,12 +4,13 @@
 {% block content %}
     <div>
     {% comment %} Banner Careers  {% endcomment %}
+        <div class="bg-white drop-shadow-lg z-40">
         <div class="bg-white h-[641px] px-10 py-10 hidden md:block drop-shadow-lg">
             <div class="grid grid-cols-5 py-28 px-10 place-content-center place-items-center">
                 <img src="{% static "image/public/imgCareer.svg" %}" alt="" class="w-[409px] col-span-2"/>
-                <div class="col-span-3 mt-12 pl-8">
+                <div class="col-span-3 pl-8">
                     <h1 class="text-5xl font-bold mb-5">Careers</h1>
-                    <p class="mb-5">Kami adalah sekumpulan programmer, designers, dan project manager yang tersebar di seluruh penjuru Indonesia. 
+                    <p class="mb-5 w-[539px] text-[#333333] font-light">Kami adalah sekumpulan programmer, designers, dan project manager yang tersebar di seluruh penjuru Indonesia. 
                     <br/><br/>Karena kami tahu di KeDA Tech, Anda bisa beekerja dari mana saja dan yang dapat kami pastikan adalah kesungguhan hati kami dalam memberikan teknologi yang tepat untuk bisnis para client. </p>
                 </div>
             </div>
@@ -18,23 +19,24 @@
           <img src="{% static "image/public/imgCareerSmall.svg" %}" alt="" class="w-[409px] col-span-2"/>
           <div class="col-span-3 px-5 py-5">
             <h1 class="text-4xl font-bold mb-5">Careers</h1>
-            <p class="mb-5">Kami adalah sekumpulan programmer, designers, dan project manager yang tersebar di seluruh penjuru Indonesia. 
+            <p class="mb-5 font-light">Kami adalah sekumpulan programmer, designers, dan project manager yang tersebar di seluruh penjuru Indonesia. 
             <br/><br/>Karena kami tahu di KeDA Tech, Anda bisa beekerja dari mana saja dan yang dapat kami pastikan adalah kesungguhan hati kami dalam memberikan teknologi yang tepat untuk bisnis para client. </p>
         </div>
         </div>
     {% comment %} ICON ICON {% endcomment %}
           <div class="md:h-[562px] md:py-28">
-              <div class="grid grid-cols-4 md:px-24 px-5 gap-5 mb-5 place-content-center place-items-center">
+              <div class="grid grid-cols-4 md:px-24 px-5 gap-5 mb-5 md:mb-10 place-content-center place-items-center">
                   <img src="{% static "image/public/iconCareer1.svg" %}" alt="" class="w-[156px] md:w-[194px]"/>
                   <img src="{% static "image/public/iconCareer2.svg" %}" alt="" class="w-[104px] md:w-[130px]"/>
                   <img src="{% static "image/public/iconCareer3.svg" %}" alt="" class="w-[142px] md:w-[178px]"/>
                   <img src="{% static "image/public/iconCareer4.svg" %}" alt="" class="w-[60px] md:w-[98px]"/>
               </div>
               <div class="">
-                  <h1 class="text-center md:text-4xl text-xl px-5 font-bold italic md:px-24 leading-normal">Dengan tim yang berisi anak muda, KeDA Tech penuh dengan 
+                  <h1 class="text-center md:text-4xl text-xl px-5 font-bold italic md:px-40 leading-normal md:leading-relaxed text-[#333333]">Dengan tim yang berisi anak muda, KeDA Tech penuh dengan 
                   kretivitas dan inovasi untuk kemajuan bersama. </h1>
               </div>
           </div>
+        </div>
     {% comment %} Benefit {% endcomment %}
         <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
           <div class="carousel-inner relative w-full overflow-hidden">
@@ -48,9 +50,9 @@
                 <div class="md:hidden">
                   <img src="{% static "image/public/workFromAnyWhere.svg" %}" alt="" class="w-screen rounded-md"/>
                 </div>
-                <div class="md:py-20 md:pl-12 px-10 py-10">
+                <div class="md:py-20 md:pl-12 md:px-10 px-5 py-10">
                     <h1 class="md:text-5xl text-3xl font-bold mb-5">work from anywhere</h1>
-                    <p class="md:pr-10 leading-normal md:text-2xl">Anda bisa bekerja dari mana saja asal tetap terhubung dengan kami.</p>
+                    <p class="md:pr-10 leading-normal md:text-2xl font-light">Anda bisa bekerja dari mana saja asal tetap terhubung dengan kami.</p>
                 </div>
                 <div class="pl-24 hidden md:block">
                     <img src="{% static "image/public/workFromAnyWhere.svg" %}" alt="" class="w-[490px]"/>
@@ -66,9 +68,9 @@
                 <div class="md:hidden">
                   <img src="{% static "image/public/newTechnologies.jpeg" %}" alt="" class="w-screen rounded-md"/>
                 </div>
-                <div class="md:py-20 md:pl-12 px-10 py-10">
+                <div class="md:py-20 md:pl-12 md:px-10 px-5 py-10">
                     <h1 class="md:text-5xl text-3xl font-bold mb-5">Pelajari Teknologi Terbaru Bersama Kami</h1>
-                    <p class="md:pr-10 leading-normal md:text-2xl">Saat bergabung dalam KeDA Tech, Anda bisa bertumbuh dalam mempelajari teknologi terbaru. Selain itu, Anda juga bisa mendapatkan project yang membantu pertumbuhan karir profesional Anda.</p>
+                    <p class="md:pr-10 leading-normal md:text-2xl font-light">Saat bergabung dalam KeDA Tech, Anda bisa bertumbuh dalam mempelajari teknologi terbaru. Selain itu, Anda juga bisa mendapatkan project yang membantu pertumbuhan karir profesional Anda.</p>
                 </div>
                 <div class="pl-24 hidden md:block">
                     <img src="{% static "image/public/newTechnologies.jpeg" %}" alt="" class="w-[490px]"/>
@@ -84,9 +86,9 @@
                 <div class="md:hidden">
                   <img src="{% static "image/public/dynamicTeam.jpeg" %}" alt="" class="w-screen rounded-md"/>
                 </div>
-                <div class="md:py-20 md:pl-12 px-10 py-10">
+                <div class="md:py-20 md:pl-12 md:px-10 px-5 py-10">
                     <h1 class="md:text-5xl text-3xl font-bold mb-5">Tim Yang Dinamis</h1>
-                    <p class="md:pr-10 leading-normal md:text-2xl">Dengan tim yang dinamis, Anda tidak akan stuck di satu masa saja. Melainkan Anda bisa mendapatkan ilmu dan pengalaman terbaru dengan cara sharing bersama tim KeDA Tech.</p>
+                    <p class="md:pr-10 leading-normal md:text-2xl font-light">Dengan tim yang dinamis, Anda tidak akan stuck di satu masa saja. Melainkan Anda bisa mendapatkan ilmu dan pengalaman terbaru dengan cara sharing bersama tim KeDA Tech.</p>
                   </div>
                 <div class="pl-24 hidden md:block">
                     <img src="{% static "image/public/dynamicTeam.jpeg" %}" alt="" class="w-[490px]"/>
@@ -102,9 +104,9 @@
                 <div class="md:hidden">
                   <img src="{% static "image/public/UpdateTechnologies.jpeg" %}" alt="" class="w-screen rounded-md"/>
                 </div>
-                <div class="md:py-20 md:pl-12 px-10 py-10">
+                <div class="md:py-20 md:pl-12 md:px-10 px-5 py-10">
                     <h1 class="md:text-5xl text-3xl font-bold mb-5">Teknologi Terkini</h1>
-                    <p class="md:pr-10 leading-normal md:text-2xl">Selalu siap dengan teknologi terkini, karena bekerja dalam KeDA Tech membutuhkan solusi yang inovatif dan tentunya diimbangi dengan teknologi paling terbaru.</p>
+                    <p class="md:pr-10 leading-normal md:text-2xl font-light">Selalu siap dengan teknologi terkini, karena bekerja dalam KeDA Tech membutuhkan solusi yang inovatif dan tentunya diimbangi dengan teknologi paling terbaru.</p>
                 </div>
                 <div class="pl-24 hidden md:block">
                     <img src="{% static "image/public/UpdateTechnologies.jpeg" %}" alt="" class="w-[490px]"/>
@@ -120,9 +122,9 @@
                 <div class="md:hidden">
                   <img src="{% static "image/public/flexibleTimeWork.jpeg" %}" alt="" class="w-screen rounded-md"/>
                 </div>
-                <div class="md:py-20 md:pl-12 px-10 py-10">
+                <div class="md:py-20 md:pl-12 md:px-10 px-5 py-10">
                     <h1 class="md:text-5xl text-3xl font-bold mb-5">Jam Kerja Fleksibel</h1>
-                    <p class="md:pr-10 leading-normal md:text-2xl">Karena bisa bekerja di mana saja, KeDA Tech menyediakan jam kerja yang fleksibel, yang bisa Anda atur sesuai keinginan. Asalkan tetap terhubung dengan KeDA Tech. Selain itu, #LifeAtKeDA juga memberikan bpjs kesehatan.</p>
+                    <p class="md:pr-10 leading-normal md:text-2xl font-light">Karena bisa bekerja di mana saja, KeDA Tech menyediakan jam kerja yang fleksibel, yang bisa Anda atur sesuai keinginan. Asalkan tetap terhubung dengan KeDA Tech. Selain itu, #LifeAtKeDA juga memberikan bpjs kesehatan.</p>
                 </div>
                 <div class="pl-24 hidden md:block">
                     <img src="{% static "image/public/flexibleTimeWork.jpeg" %}" alt="" class="w-[490px]"/>
@@ -189,7 +191,7 @@
                     </div>
                   </div>
                     </div>
-                    <p style="background-color: {{ career.career_tag_id.color_id.hex_code }};" class="career-tag w-[132px] py-1 text-center rounded-full text-white mb-3">{{ career.career_tag_id.career_tag_name }}</p>
+                    <p style="background-color: {{ career.career_tag_id.color_id.hex_code }};" class="career-tag w-fit px-5 py-1 text-center rounded-full text-white mb-3">{{ career.career_tag_id.career_tag_name }}</p>
                     <p class="text-lg">{{ career.description|safe|truncatechars:140 }}</p>
                     <p class="text-lg font-semibold">Apply before: {{career.deadline}}</p>
                     <Button onclick="window.location.href = '{% url "detail-career" career.slug_career %}';" href="" class="mt-5 py-2 w-full border bg-[#d20008] text-white rounded-md hover:bg-[#b3020f] font-medium transition duration-300">Apply Now </Button>
@@ -272,30 +274,30 @@
           <p class="text-white mt-7 flex justify-center">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> KeDA Tech<span class="md:block hidden">. All Rights Reserved.</span></p>
       </div>
     </div>
-    {% comment %} After Footer {% endcomment %}
+    {% comment %} after footer {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterTosca.svg" %}')" class="h-[720px] shadow-black hidden md:flex justify-center items-center bg-no-repeat bg-center bg-cover">
           <div class="">
-            <h1 class="text-5xl font-bold mb-4">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-2xl pr-20 mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-5xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl w-[559px] mb-4 text-[#333333]">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
               <form action="" method="POST">
                 {% csrf_token %}
                 {{form}}
                 <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md ml-3 font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
               </form> 
-
               {% if message == 'berhasil' %}
                 <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
               {% elif message == 'error' %}
                 <p style="color: rgb(220 38 38);" class="text-xs italic">Format Email yang Anda masukkan salah!</p>
-              {% endif %} </div>
+              {% endif %}
+            </div>
           </div>
         </div>
-      {% comment %} after footer mobile {% endcomment %}
+    {% comment %} after footer mobile {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterToscaSmall.svg" %}')" class="h-[720px] bg-center bg-cover bg-no-repeat md:hidden">
           <div class="py-52 px-10">
-            <h1 class="text-4xl font-bold mb-4 text">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-xl  mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-4xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl text-[#333333] mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
               <form action="" method="POST">
                 {% csrf_token %}
@@ -304,7 +306,6 @@
                   <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
                 </div>
               </form> 
-
               {% if message == 'berhasil' %}
                 <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
               {% elif message == 'error' %}

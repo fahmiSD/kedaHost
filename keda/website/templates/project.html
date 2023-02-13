@@ -13,12 +13,12 @@
       {% comment %} Quote {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgProjectWhite.svg" %}')" class="md:h-[720px] hidden md:block bg-center bg-cover bg-no-repeat drop-shadow-lg">
           <div class="px-10 py-20 md:px-28 md:pt-64">
-            <p class="md:text-4xl text-3xl font-bold leading-normal italic">"Kami akan membawa Anda mengenali KeDA Tech lebih dalam dengan melihat project apa saja yang sudah kami kerjakan, dan memakan waktu berapa lama untuk setiap projectnya. "</p>
+            <h1 class="md:text-4xl text-3xl font-bold md:leading-relaxed italic">"Kami akan membawa Anda mengenali KeDA Tech lebih dalam dengan melihat project apa saja yang sudah kami kerjakan, dan memakan waktu berapa lama untuk setiap projectnya. "</h1>
           </div>
         </div>
         <div class="md:h-[720px] shadow shadow-black bg-white md:hidden drop-shadow-lg">
           <div class="px-10 py-20 md:px-28 md:pt-64">
-            <p class="md:text-4xl text-3xl font-bold leading-normal italic">"Kami akan membawa Anda mengenali KeDA Tech lebih dalam dengan melihat project apa saja yang sudah kami kerjakan, dan memakan waktu berapa lama untuk setiap projectnya. "</p>
+            <h2 class="md:text-4xl text-3xl font-bold leading-normal italic">"Kami akan membawa Anda mengenali KeDA Tech lebih dalam dengan melihat project apa saja yang sudah kami kerjakan, dan memakan waktu berapa lama untuk setiap projectnya. "</h2>
           </div>
         </div>
       {% comment %} div Project {% endcomment %}
@@ -97,31 +97,30 @@
               <p class="text-white mt-7 flex justify-center">Copyright © <script>document.write(/\d{4}/.exec(Date())[0])</script> KeDA Tech<span class="md:block hidden">. All Rights Reserved.</span></p>
           </div>
         </div>
-     {% comment %} After Footer {% endcomment %}
+        {% comment %} after footer {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterPink.svg" %}')" class="h-[720px] shadow-black hidden md:flex justify-center items-center bg-no-repeat bg-center bg-cover">
           <div class="">
-            <h1 class="text-5xl font-bold mb-4">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-2xl pr-20 mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-5xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl w-[559px] mb-4 text-[#333333]">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
-              <form action="" method="POST" id="subs">
+              <form action="" method="POST">
                 {% csrf_token %}
-                <input type="hidden" name="form_type" value="form">
                 {{form}}
                 <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md ml-3 font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
               </form> 
-
               {% if message == 'berhasil' %}
                 <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
               {% elif message == 'error' %}
                 <p style="color: rgb(220 38 38);" class="text-xs italic">Format Email yang Anda masukkan salah!</p>
-              {% endif %}</div>
+              {% endif %}
+            </div>
           </div>
         </div>
-        {% comment %} after footer mobile {% endcomment %}
+    {% comment %} after footer mobile {% endcomment %}
         <div style="background-image: url('{% static "image/public/bgAfterFooterPinkSmall.svg" %}')" class="h-[720px] bg-center bg-cover bg-no-repeat md:hidden">
           <div class="py-52 px-10">
-            <h1 class="text-4xl font-bold mb-4 text">Tetap Terhubung Bersama Kami</h1>
-            <p class="text-xl  mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
+            <h1 class="text-4xl font-bold mb-4 text-[#333333]">Tetap Terhubung Bersama Kami</h1>
+            <p class="text-xl text-[#333333] mb-4">Sign up for the lat­est up­dates to our Way of Working, case stud­ies, and more.</p>
             <div>
               <form action="" method="POST">
                 {% csrf_token %}
@@ -130,7 +129,6 @@
                   <button type="submit" class="px-3 py-1 border bg-[#d20008] text-white text-md font-bold rounded hover:bg-[#b3020f] hover:border-[#d20008] transition duration-300">Berlangganan</button>
                 </div>
               </form> 
-
               {% if message == 'berhasil' %}
                 <p style="color: rgb(16 185 129);" class="text-xs italic">Selamat, Anda telah berlangganan dengan kami!</p>
               {% elif message == 'error' %}
